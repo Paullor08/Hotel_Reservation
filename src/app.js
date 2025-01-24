@@ -3,12 +3,18 @@ import * as dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import connectDB from './config/db.js';
+import BookingRouter from './routes/BookingRoutes.js';
+import AuthRouter from './routes/authRoutes.js';
+import RoomRouter from './routes/RoomRoutes.js';
+
+
 dotenv.config();
-
-
 const app = express();
 connectDB();
-
+app.use(express.json());
+app.use('/api/' ,BookingRouter);
+app.use('/api/' ,AuthRouter);
+app.use('/api/rooms',RoomRouter);
 
 
 
