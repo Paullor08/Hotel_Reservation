@@ -1,0 +1,53 @@
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    width: 100%; /* ใช้ความกว้างเต็มพื้นที่ */
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* ปรับให้ z-index สูงขึ้น */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 75%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* จัดตำแหน่งให้ทุกอย่างอยู่ในแนวนอน */
+    align-items: center;
+    width: 100%;
+}
+
+.logo a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap; /* ป้องกันไม่ให้ข้อความถูกตัด */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* ทำให้รายการอยู่ในบรรทัดเดียวกัน */
+    gap: 2rem; /* เพิ่มช่องว่างระหว่างลิงก์ */
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-links .logo {
+    display: inline-block;
+    font-size: 1.5rem;
+}
