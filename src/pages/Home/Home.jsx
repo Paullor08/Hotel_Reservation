@@ -31,21 +31,27 @@ const Home = () => {
                         <img className='DeluxeRoom' src={DeluxeRoom} alt="Deluxe Room" />
                         <h3>Deluxe Room</h3>
                         <p>Price: $150 per night</p>
-                        <button className="view-details-button">View Details</button>
+                        <button onClick={handleBookNow} className="view-details-button">
+                            View Details
+                        </button>
                     </div>
 
                     <div className="room-card-DuoRoom">
                         <img className='DuoRoom' src={DuoRoom} alt="DuoRoom" />
                         <h3>DuoRoom</h3>
                         <p>Price: $75 per night</p>
-                        <button className="view-details-button">View Details</button>
+                        <button onClick={handleBookNow} className="view-details-button">
+                            View Details
+                        </button>
                     </div>
 
                     <div className="room-card-SingleRoom">
                         <img className='SingleRoom' src={SingleRoom} alt="SingleRoom" />
                         <h3>SingleRoom</h3>
                         <p>Price: $20 per night</p>
-                        <button className="view-details-button">View Details</button>
+                        <button onClick={handleBookNow} className="view-details-button">
+                            View Details
+                        </button>
                     </div>
                 </div>
             </section>

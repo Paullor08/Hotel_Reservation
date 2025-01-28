@@ -5,7 +5,6 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <div className="container">
                 <ul className="nav-links">
                     <li>
                         <Link className='logo' to="/">Hotel Booking</Link>
@@ -21,7 +20,6 @@ const Navbar = () => {
                     </li>
                     {/* เพิ่มลิงก์อื่น ๆ ตามต้องการ */}
                 </ul>
-            </div>
         </nav>
     );
 };
