@@ -1,7 +1,7 @@
 .navbar {
     background-color: #333;
     padding: 1rem;
-    width: 100%; /* ใช้ความกว้างเต็มพื้นที่ */
+    width: full; /* ใช้ความกว้างเต็มพื้นที่ */
     height: 60px;
     position: sticky;
     top: 0;
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between; /* จัดตำแหน่งให้ทุกอย่างอยู่ในแนวนอน */
     align-items: center;
-    width: 100%;
+    width: full;
 }
 
 .logo a {

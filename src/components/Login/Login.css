@@ -1,0 +1,71 @@
+.login-container {
+    background-color: #f7fafc; /* สีพื้นหลังเทาอ่อน */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* ความสูงขั้นต่ำของหน้าจอ */
+}
+
+.login-card {
+    width: 100%;
+    max-width: 24rem; /* ความกว้างสูงสุด */
+    margin: auto; /* จัดกลางในแนวนอน */
+    background-color: #ffffff; /* สีพื้นหลังขาว */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงา */
+    border-radius: 0.375rem; /* มุมมน */
+    padding: 2rem; /* Padding */
+}
+
+.text-center {
+    text-align: center; /* จัดข้อความกลาง */
+}
+
+.title {
+    font-size: 2rem; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตัวหนา */
+}
+
+.subtitle {
+    font-size: 1.25rem; /* ขนาดตัวอักษรรอง */
+}
+
+.input-group {
+    margin-bottom: 1rem; /* ระยะห่างระหว่างกลุ่ม input */
+}
+
+.input-field {
+    width: 100%; /* ความกว้างเต็มพื้นที่ */
+    padding: 0.5rem; /* Padding */
+    border-radius: 9999px; /* มุมมนเต็มที่ */
+    border: 1px solid #ccc; /* เส้นขอบ */
+}
+
+.error-message {
+    color: #f56565; /* สีแดงสำหรับข้อความข้อผิดพลาด */
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me label {
+    margin-left: 0.5rem; /* ระยะห่างระหว่าง checkbox และ label */
+}
+
+.login-button {
+    width: 100%; /* ความกว้างเต็มพื้นที่ */
+    background-color: #C1DCDC; /* สีพื้นหลังปุ่ม */
+    color: black; /* สีตัวอักษรปุ่ม */
+    font-weight: bold; /* ตัวหนา */
+    padding: 0.5rem; /* Padding */
+    border-radius: 9999px; /* มุมมนเต็มที่ */
+}
+
+.login-button:hover {
+    background-color: #3b82f6; /* เปลี่ยนสีเมื่อ hover */
+}
+
+.signup-link {
+    text-align: center; /* จัดข้อความกลาง */
+}

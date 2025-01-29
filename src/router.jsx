@@ -1,11 +1,17 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home/Home";
+import Homepage from "./pages/Home_Page";
+import Roomspage from "./pages/Rooms_Page";
+import LoginComponent from "./components/Login/Login";
+import RegisterComponent from "./components/Register/Register";
 
 function Router() {
 
     return(
         <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path="/" element={<Homepage/>}/>
+            <Route path="/rooms" element={<Roomspage/>}/>
+            <Route path="/login" element={<LoginComponent/>}/>
+            <Route path="/register" element={<RegisterComponent/>}/>
         </Routes>
     );
 }

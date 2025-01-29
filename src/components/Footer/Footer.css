@@ -1,0 +1,9 @@
+.footer {
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+
+.footer p {
+    margin: 0; /* ยกเลิกมาร์จิ้นเพื่อให้ข้อความอยู่กลาง */
+}
