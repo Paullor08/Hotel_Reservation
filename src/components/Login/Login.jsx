@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 import './Login.css'; // นำเข้าไฟล์ CSS
 
 export default function LoginComponent() {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
@@ -13,6 +15,8 @@ export default function LoginComponent() {
             const response = await axios.post('http://localhost:8000/api/login', { email, password });
             localStorage.setItem('token', response.data.token);
             alert('Login successful!');
+            navigate('/');
+
         } catch (error) {
             console.error('Login failed:', error);
             setErrorMessage('Invalid email or password');

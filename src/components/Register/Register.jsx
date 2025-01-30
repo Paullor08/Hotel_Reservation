@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import './Register.css'; // นำเข้าไฟล์ CSS
 
 export default function RegisterComponent() {
+    const navigate = useNavigate();
+    const [username, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -16,9 +19,10 @@ export default function RegisterComponent() {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:8000/api/register', { email, password });
+            const response = await axios.post('http://localhost:8000/api/register', { username, email, password });
             setSuccessMessage('Registration successful! Please log in.');
             setErrorMessage('');
+            navigate('/login')
         } catch (error) {
             console.error('Registration failed:', error);
             setErrorMessage('Registration failed. Please try again.');
@@ -32,6 +36,16 @@ export default function RegisterComponent() {
                     <h1 className="title">Create Account</h1>
                 </div>
                 <form onSubmit={handleRegister}>
+                    <div className="input-group">
+                        <input
+                            type="username"
+                            placeholder="Username"
+                            value={username}
+                            onChange={(e) => setUserName(e.target.value)}
+                            className="input-field"
+                            required
+                        />
+                    </div>
                     <div className="input-group">
                         <input
                             type="email"
